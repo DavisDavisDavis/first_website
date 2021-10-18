@@ -24,6 +24,11 @@
         <div>
             <a href="album.php"><img src="https://static.zerochan.net/HimeHina.Channel.full.2328419.jpg" alt=""></a>
         </div>
+
+        <?php
+
+        ?>
+
     </main>
     <footer>
         <ul class="text_scroll">

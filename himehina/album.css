@@ -13,12 +13,13 @@ body {
 }
 
 header img {
-
+    width: 100%;
 }
 
 main .albums {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    padding: 10%;
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     grid-gap: 10px;

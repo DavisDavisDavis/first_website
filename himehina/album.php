@@ -6,16 +6,14 @@ require __DIR__ ."/data.php";
 
 ?>
 
-    <main>
-        <div class="albums">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-            <img src="https://himehina.jp/s3/skiyaki/uploads/image/file/103688/discography_Kiryca.png" alt="">
-        </div>
-    </main>
+<main>
+    <div class="albums">
+        <?php
+            foreach ($albums as $album) { ?>
+            <img src="<?php echo $album; ?>" alt=""> <?php
+            } ?>
+    </div>
+</main>
 
 <?php
 
