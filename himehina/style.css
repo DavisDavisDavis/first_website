@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.text_scroll {
+    display: flex;
+    width: 100vw;
+    list-style-type: none;
+}
+
+.text_scroll li {
+    margin: 40px;
+    font-size: 3rem;
+}
+
+header {
+    color: red;
+    animation-name: Hime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+footer {
+    color: blue;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes Hime {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(10%);
+    }
+}
