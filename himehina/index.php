@@ -16,19 +16,29 @@
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
+        </ul>
+        <ul class="text_scroll_after">
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
         </ul>
     </header>
     <main>
-        <div>
-            <a href="album.php"><img src="https://static.zerochan.net/HimeHina.Channel.full.2328419.jpg" alt=""></a>
+        <img src="/images/Tanakahime.jpeg" alt="">
+
+        <div class="release">
+            <h1>
+                NEXT 
+                20 DAYS
+                REALESE
+            </h1>
         </div>
 
-        <?php
-
-        ?>
-
+        
+        <img src="/images/SuzukiHina.jpeg" alt="">
     </main>
     <footer>
         <ul class="text_scroll">

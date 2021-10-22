@@ -16,6 +16,11 @@ header img {
     width: 100%;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 main .albums {
     width: 90%;
     height: 100%;

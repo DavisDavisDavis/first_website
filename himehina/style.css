@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    font-family: 'Roboto', sans-serif;;
+}
+
 .text_scroll {
     display: flex;
-    width: 100vw;
+    width: 100%;
     list-style-type: none;
+    animation-name: hime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.text_scroll_after {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    animation-duration: 10s;
+    animation-name: hime_after;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: blue;
 }
 
 .text_scroll li {
@@ -13,12 +44,17 @@
     font-size: 3rem;
 }
 
+.text_scroll_after li {
+    margin: 40px;
+    font-size: 3rem;
+    
+}
+
 header {
     color: red;
-    animation-name: Hime;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    display: flex;
+
+
 }
 
 footer {
@@ -26,14 +62,28 @@ footer {
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@keyframes Hime {
+main img {
+    width: 20%;
+}
+
+@keyframes hime_after {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(80%);
+    }
+}
+
+@keyframes hime {
     from {
         transform: translateX(-50%);
     }
