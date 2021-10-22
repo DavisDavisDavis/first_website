@@ -1,3 +1,9 @@
+<?php 
+
+require __DIR__ ."/function.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,18 +40,28 @@
         </div>
     </div>
     <main>
-        <img src="/images/Tanakahime.jpeg" alt="">
+        <img src="/images/Tanakahime-removebg-preview.png" alt="">
 
-        <div class="release">
-            <h1>
-                NEXT 
-                20 DAYSm
-                REALESE
-            </h1>
-        </div>
+        <a href="album.php">
+            <div class="release">
+                <h2>
+                    NEXT 
+                </h2>
+                <h1>
+                    <?php
+                    echo release();
+                    ?>
+                    DAYS
+                </h1>
+                <h2>
+                    RELEASE
+                </h2>
+            </div>
+        </a>
+
 
         
-        <img src="/images/SuzukiHina.jpeg" alt="">
+        <img src="/images/SuzukiHina-removebg-preview.png" alt="">
     </main>
     <div class="marquee">
         <div class="marquee_content_bot">
