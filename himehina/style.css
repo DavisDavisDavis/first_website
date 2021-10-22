@@ -12,58 +12,74 @@ body {
     align-items: center;
     flex-direction: column;
 
+    font-family: 'Roboto', sans-serif;
+
+    background: linear-gradient(90deg, red, blue);
+}
+
+.marquee {
+    width: 100vw;
+
     overflow: hidden;
 
-    font-family: 'Roboto', sans-serif;;
 }
 
-.text_scroll {
+.marquee_content_top {
     display: flex;
-    width: 100%;
-    list-style-type: none;
-    animation-name: hime;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    list-style: none;
 
-}
-
-.text_scroll_after {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    animation-duration: 10s;
-    animation-name: hime_after;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    color: blue;
-}
-
-.text_scroll li {
-    margin: 40px;
-    font-size: 3rem;
-}
-
-.text_scroll_after li {
-    margin: 40px;
-    font-size: 3rem;
-    
-}
-
-header {
     color: red;
+
+    animation-name: scroll_top;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.marquee_content_bot {
     display: flex;
+    list-style: none;
 
-
-}
-
-footer {
     color: blue;
+
+    animation-name: scroll_bot;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes scroll_top {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes scroll_bot {
+    0% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+li {
+    display: flex;
+    width: 10vw;
+    font-size: 2rem;
+    flex-shrink: 0;
+
+}
+
 
 main {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,24 +87,4 @@ main {
 
 main img {
     width: 20%;
-}
-
-@keyframes hime_after {
-    from {
-        transform: translateX(-20%);
-    }
-
-    to {
-        transform: translateX(80%);
-    }
-}
-
-@keyframes hime {
-    from {
-        transform: translateX(-50%);
-    }
-
-    to {
-        transform: translateX(10%);
-    }
 }

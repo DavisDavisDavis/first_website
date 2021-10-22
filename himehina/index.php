@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <ul class="text_scroll">
+    <div class="marquee">
+        <div class="marquee_content_top">
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
-        </ul>
-        <ul class="text_scroll_after">
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
+
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
             <li>Hime</li>
-        </ul>
-    </header>
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
+            <li>Hime</li>
+        </div>
+    </div>
     <main>
         <img src="/images/Tanakahime.jpeg" alt="">
 
         <div class="release">
             <h1>
                 NEXT 
-                20 DAYS
+                20 DAYSm
                 REALESE
             </h1>
         </div>
@@ -40,8 +47,8 @@
         
         <img src="/images/SuzukiHina.jpeg" alt="">
     </main>
-    <footer>
-        <ul class="text_scroll">
+    <div class="marquee">
+        <div class="marquee_content_bot">
             <li>Hina</li>
             <li>Hina</li>
             <li>Hina</li>
@@ -49,7 +56,20 @@
             <li>Hina</li>
             <li>Hina</li>
             <li>Hina</li>
-        </ul>
-    </footer>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+            <li>Hina</li>
+        </div>
+    </div>
 </body>
 </html>
