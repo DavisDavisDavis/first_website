@@ -20,6 +20,9 @@ body {
     overflow: hidden;
 
     transition: 0.5s;
+
+    /*-webkit-transform-style: preserve-3d; not needed on parent element */
+    -webkit-perspective: 1000; 
 }
 
 .marquee {
@@ -92,7 +95,46 @@ main {
 
 main img {
     height: 80%;
+
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
 }
+
+.hime_img {
+    animation-name: hime;
+}
+
+.hina_img {
+    animation-name: hina;
+
+}
+
+@keyframes hime {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes hina {
+    0% {
+        transform: translateX(50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+
 
 .release {
     display: flex;
@@ -112,12 +154,9 @@ main a {
     background: linear-gradient(90deg, blue, red);
     border-radius: 20px;
 
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition: 1s ease;
 }
 
-a:hover{
-
-    
+.hina_img {
+    margin-left: 38px;
 }
