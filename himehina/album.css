@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: black;
-
+    color: white;
 }
 
 header img {
@@ -34,3 +34,18 @@ main .albums img{
     width: 100%;
 
 }
+
+.iframe_container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe_container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

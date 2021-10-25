@@ -17,7 +17,7 @@ card.addEventListener('mouseenter', (e) => {
     card.style.transition = 'none';
 
     //Cool stuff
-    release.style.transform = 'translateZ(200px) perspective(200px)';
+    release.style.transform = 'translateZ(200%)';
 
 });
 
