@@ -3,13 +3,13 @@
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: black;
     color: white;
+    margin: 0;
 }
 
 header img {
@@ -24,28 +24,66 @@ main {
 main .albums {
     width: 90%;
     height: 100%;
-    padding: 10%;
+    padding: 5%;
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
+
+    color: white;
+    margin-bottom: 10%;
+}
+
+main .album div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    overflow: hidden;
+    margin: 0;
 }
 
 main .albums img{
     width: 100%;
+    transition: 0.5s ease-out;
+    object-fit: cover;
 
 }
 
+main section {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .albums figure :hover {
+    transform: scale(1.3);
+}
+
+/* Video styling */
 .iframe_container{
     position: relative;
-    width: 100%;
+    width: 80%;
     padding-bottom: 56.25%; 
     height: 0;
-  }
-  .iframe_container iframe{
+}
+.iframe_container iframe{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
   
+/* Media settings for grid */
+@media screen and (max-width: 650px) {
+    main .albums {
+        grid-template: repeat(3, 1fr)/repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 975px) {
+    main .albums {
+        grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    }
+}

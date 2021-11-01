@@ -15,6 +15,7 @@ require __DIR__ ."/function.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="album.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://stickershop.line-scdn.net/stickershop/v1/sticker/99009942/android/sticker.png"/>
 </head>
 <body>
     <header>
@@ -29,12 +30,24 @@ require __DIR__ ."/function.php";
     </article>
 
     <main>
-
         <div class="albums">
             <?php
-                foreach ($albums as $album) { ?>
-                <img src="<?php echo $albums['img']; ?>" alt=""> <?php
-                } ?>
+                foreach ($information as $img => $info) { ?>
+                <div>
+
+                    <figure>
+                        <img src="<?php echo $img; ?>" alt=""> 
+                    </figure> <?php
+                    ?>
+                    <section> <?php
+                    foreach ($info as $in) { ?>
+                            <h3><?php echo $in ?> </h3> 
+                        <?php
+                    } ?>
+                    </section> 
+                </div> <?php
+                }
+            ?>
         </div>
     </main>
 

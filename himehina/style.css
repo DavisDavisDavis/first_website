@@ -22,7 +22,7 @@ body {
     transition: 0.5s;
 
     /*-webkit-transform-style: preserve-3d; not needed on parent element */
-    -webkit-perspective: 1000; 
+    -webkit-perspective: 1000;
 }
 
 .marquee {
@@ -144,9 +144,8 @@ main img {
     justify-content: center;
     color: white;
     font-size: 2rem;
-
+    transform: translateZ(100px) perspective(200px);
     text-align: center;
-
 }
 
 main a {   
@@ -161,3 +160,8 @@ main a {
     margin-left: 38px;
 }
 
+@media screen and (max-width: 770px) {
+    .marquee {
+        font-size: 5rem;
+    }
+}
