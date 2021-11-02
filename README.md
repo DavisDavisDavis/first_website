@@ -17,13 +17,23 @@ Add the installation instructions.
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Patrik Staaf](https://github.com/patrikstaaf).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `index.php` - There are two index.php files, one in root and another in your project folder.
+2. `album_footer.html` - album_footer.html is included in album.php but not in index.php (closing tags instead).
+3. `album_header.html` - album_header is never included, rather duplication of code.
+4. `style.css` - Did you consider adding a styles folder for your css files?
+5. `function.php 17` - Missing return declaration.
+6. `index.php 22` - Both “Hime” and “Hina” collapses and blends in mobile view (or is that intended?)
+7. `album.php 28` - Remember to add alt text on your images, especially this one since it serves as a heading.
+8. `index.php 97` - Script after closing body tag.
+9. `data.php 22` - Some images could be optimized for better load time.
+10. `album.php 46` -  Consider using endforeach instead of {} for readibility.
+
+With that said, I think your design is badass. Keep doing different stuff that looks cool, as it’s memorable and not generic/dull. 
+
+<img src="https://media2.giphy.com/media/lPcmrZjScHB5bQv2tA/giphy.gif?cid=ecf05e47s6ns97iz2s1arll26wy4r74ppmlzeo2o3bxxij2m&rid=giphy.gif&ct=g">
+
 
 # Testers
 
