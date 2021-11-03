@@ -1,10 +1,4 @@
-# WORK IN PROGRESS
-
 ![image](https://i.pinimg.com/originals/ba/61/88/ba6188fd7b5f5f3b560fbad5064c7a66.gif)
-Scetch so far
-
-
-
 
 
 # HIME HINA MUSIC
