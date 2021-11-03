@@ -36,5 +36,5 @@ With that said, I think your design is badass. Keep doing different stuff that l
 
 Tested by the following people:
 
-1. Jane Doe
+1. Marcus
 2. John Doe
