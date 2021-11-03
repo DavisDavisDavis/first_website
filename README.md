@@ -1,19 +1,22 @@
 # WORK IN PROGRESS
 
-![image](https://user-images.githubusercontent.com/89775852/137101515-d824660f-83f0-42f8-98c8-16b3349a7609.png)
+![image](https://i.pinimg.com/originals/ba/61/88/ba6188fd7b5f5f3b560fbad5064c7a66.gif)
 Scetch so far
 
 
 
-INSERT MANDATORY GIF
 
-# Project Title
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+# HIME HINA MUSIC
+
+[Fun website](https://eggie.love/himehina/index.php) to check up on the albums and how many days it is left to the next release. 
 
 # Installation
 
 Add the installation instructions.
+
+1. Download
+2. PHP -S localhost:8000 from the repo
 
 # Code Review
 
