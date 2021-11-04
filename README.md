@@ -37,4 +37,4 @@ With that said, I think your design is badass. Keep doing different stuff that l
 Tested by the following people:
 
 1. Marcus
-2. John Doe
+2. Anton
